@@ -154,6 +154,8 @@ h4 {
 .home-bg .home-content .home-link a:hover::before {
     left: 0%;
     color: #000000;
+    border: 2px solid #000000;
+
 }
 
 
