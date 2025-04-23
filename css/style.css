@@ -90,7 +90,7 @@ h4 {
 
 
 .home-bg {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(images/bg.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
