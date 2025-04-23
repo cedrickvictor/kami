@@ -148,7 +148,7 @@ h4 {
     overflow: hidden;
     z-index: -1;
     transition: .5s ease-in-out;
-    color: #000;
+    color: #fff;
 }
 
 .home-bg .home-content .home-link a:hover::before {
