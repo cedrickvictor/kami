@@ -148,17 +148,13 @@ h4 {
     overflow: hidden;
     z-index: -1;
     transition: .5s ease-in-out;
-    color: #fff;
+    color: #000;
 }
 
 .home-bg .home-content .home-link a:hover::before {
     left: 0%;
-    color: #000000;
-    border: 2px solid #000000;
 
 }
-
-
 
 section {
     width: 100%;
