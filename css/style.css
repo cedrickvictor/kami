@@ -399,6 +399,7 @@ section .container {
     padding: 0rem 2rem;
     text-transform: capitalize;
     z-index: 100;
+    margin-left: 20px;
 
 }
 
@@ -409,8 +410,36 @@ section .container {
 }
 
 .arrival .item:hover .btn-shop:hover {
-    text-decoration: underline;
+    background-color: #fff;
+    color: #18406f;
+    padding: 0.5rem 2rem;
+}
 
+@keyframes cadre {
+    0% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+    50% {
+        border-top-color: #fff;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+    75% {
+        border-top-color: #fff;
+        border-right-color: #fff;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+    100% {
+        border-top-color: #fff;
+        border-right-color: #fff;
+        border-left-color: #fff;
+        border-bottom-color: #fff;
+    }
 }
 
 
@@ -868,9 +897,9 @@ section .container {
 }
 
 .instagram-items {
-    display: flex;
-    width: 2000px;
+    /* Remove fixed width to allow Swiper to control layout */
     position: relative;
+    padding-left: 3rem; /* to avoid overlap with "Our Gallery" text */
 }
 
 .instagram-items p {
@@ -881,33 +910,61 @@ section .container {
     padding: 0.5rem 1rem;
     background-color: #eee;
     cursor: pointer;
+    z-index: 10;
 }
 
-.instagram-items .item {
-    width: 200px;
-    height: 200px;
+.instagram-items .swiper-wrapper {
+    display: flex;
+}
+
+.instagram-items .swiper-slide {
+    width: 200px !important;
+    height: 200px !important;
     overflow: hidden;
     background: rgb(0, 0, 0);
     cursor: pointer;
     transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.instagram-items .item:hover {
+.instagram-items .swiper-slide:hover {
     background: transparent;
 }
 
-
-.instagram-items .item img {
+.instagram-items .swiper-slide img {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     object-fit: cover;
     transition: all 1s;
     opacity: 0.5;
 }
 
-.instagram-items .item:hover img {
+.instagram-items .swiper-slide:hover img {
     transform: scale(1.2);
     opacity: 1;
+}
+
+/* Style navigation buttons */
+.instagram-items .swiper-button-prev,
+.instagram-items .swiper-button-next {
+    color: #fff;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.instagram-items .swiper-button-prev {
+    left: 0;
+}
+
+.instagram-items .swiper-button-next {
+    right: 0;
 }
 
 .footer .items {

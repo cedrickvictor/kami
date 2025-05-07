@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAMI WOOD DESIGN LTD| Online Website</title>
+    <title>KAMI WOOD DESIGN LTD | Online Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.0/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -19,7 +19,7 @@
         <div class="site-logo">
             <a href="#" class="logo-link">
                 <img src="./images/logo.jpg" alt="" srcset="">
-                <span>KAMI WOOD DESIGN</span>
+                <span>KAMI WOOD DESIGN LTD</span>
             </a>
         </div>
 
@@ -369,7 +369,7 @@
                                 <a href="twitter.com/username"><i class="fab fa-twitter"></i></a>
                                 <a href="linkedin.com/namepage"><i class="fab fa-linkedin-in"></i></a>
                             </div>
-
+     
                         </div>
                     </div>
                 </div>
@@ -509,32 +509,36 @@
 
 
     <footer class="footer">
-        <div class="instagram-items">
-            <div class="item">
-                <img src="./images/latests/latest-1.jpg" alt="" srcset="">
+        <div class="instagram-items swiper">
+            <div class="swiper-wrapper">
+                <div class="item swiper-slide">
+                    <img src="./images/latests/latest-1.jpg" alt="" srcset="">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="./images/latests/latest-2.jpg" alt="" srcset="">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="./images/latests/latest-3.jpg" alt="" srcset="">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="./images/latests/latest-4.jpg" alt="" srcset="">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="./images/latests/latest-5.jpg" alt="" srcset="">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="./images/products/product-1.jpg" alt="" srcset="">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="./images/products/product-2.jpg" alt="" srcset="">
+                </div>
+                <div class="item swiper-slide">
+                    <img src="./images/products/product-3.jpg" alt="" srcset="">
+                </div>
             </div>
-            <div class="item">
-                <img src="./images/latests/latest-2.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img src="./images/latests/latest-3.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img src="./images/latests/latest-4.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img src="./images/latests/latest-5.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img src="./images/products/product-1.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img src="./images/products/product-2.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img src="./images/products/product-3.jpg" alt="" srcset="">
-            </div>
-            <p>follow us in nstagram</p>
+            <p>Our Gallery</p>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
  
         <div class="items">
@@ -603,6 +607,38 @@
                 },
                 950: {
                     slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+            }
+        });
+
+        const instagramSwiper = new Swiper('.instagram-items', {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                350: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                900: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                1200: {
+                    slidesPerView: 4,
                     spaceBetween: 10,
                 },
             }
